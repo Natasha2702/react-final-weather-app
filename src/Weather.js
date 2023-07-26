@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -56,28 +57,26 @@ export default function Weather(props) {
               />
             </div>
           </form>
+
+          <WeatherInfo data={weatherData} />
+          <br />
+          <h3>Forecast for the week</h3>
+          <WeatherForecast
+            coordinates={weatherData.coordinates}
+            city={weatherData.city}
+          />
         </div>
-        <WeatherInfo data={weatherData} />
-        <br />
 
         <footer class="mt-5">
           <div class="footer-header">
             <div>
               <p>
                 Made by Natasha <br />
-                <a
-                  href="https://github.com/Natasha2702/week-5-homework"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="/" target="_blank" rel="noreferrer">
                   open-sourced on github
                 </a>{" "}
                 and{" "}
-                <a
-                  href="https://rococo-axolotl-5f8766.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   hosted on Netlify
                 </a>
               </p>

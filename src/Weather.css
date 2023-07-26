@@ -1,0 +1,79 @@
+.WeatherApp .search-input {
+  background: #f8f2e7;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+}
+
+.WeatherApp .btn {
+  background: #b6097c;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.WeatherApp .btn:hover {
+  background: palevioletred;
+  color: pink;
+  cursor: pointer;
+}
+
+.WeatherApp .search-input::placeholder {
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.WeatherApp ul {
+  margin: 0;
+  padding: 0;
+}
+
+.WeatherApp li {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.WeatherApp li strong {
+  color: #00a6a6;
+  font-weight: normal;
+}
+
+.WeatherApp .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 1;
+  padding: 6px;
+}
+
+.WeatherApp h1 {
+  font-size: 45px;
+}
+
+.WeatherApp .unit {
+  color: rgb(33, 33, 33);
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+
+.WeatherApp footer a {
+  color: #0077b6;
+}
+
+.WeatherApp footer {
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(23, 18, 44, 0.926);
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Date from "./Date";
+import Date from "./Dates";
 import WeatherIcons from "./WeatherIcons";
 import WeatherTemperature from "./WeatherTemperature";
 import "./WeatherInfo.css";
@@ -14,7 +14,7 @@ export default function WeatherContent(props) {
               <WeatherIcons code={props.data.icon} size={50} />
             </div>
             <div className="temperature col-10">
-              <WeatherTemperature celsius={props.data.temperature} />
+              <WeatherTemperature celsius={props.data.temperature} size={50} />
             </div>
           </div>
 
