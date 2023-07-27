@@ -17,3 +17,7 @@
 .temperature .units {
   font-size: medium;
 }
+
+a {
+  text-decoration: none;
+}

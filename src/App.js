@@ -6,8 +6,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="Main-Text">React Weather App</h1>
-        <br />
         <Weather defaultCity="Pretoria" />
       </header>
     </div>

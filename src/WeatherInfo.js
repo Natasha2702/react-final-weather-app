@@ -11,10 +11,10 @@ export default function WeatherContent(props) {
         <div className="row">
           <div className="temperature-container d-flex justify-content-start">
             <div className="col mt-3 mb-0">
-              <WeatherIcons code={props.data.icon} size={50} />
+              <WeatherIcons code={props.data.icon} size={80} />
             </div>
             <div className="temperature col-10">
-              <WeatherTemperature celsius={props.data.temperature} size={50} />
+              <WeatherTemperature celsius={props.data.temperature} />
             </div>
           </div>
 

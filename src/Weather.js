@@ -41,7 +41,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="WeatherApp">
-        <div className="container">
+        <div className="container mt-3">
           <form onSubmit={handleSubmit}>
             <div className="d-flex">
               <input
@@ -61,23 +61,33 @@ export default function Weather(props) {
           <WeatherInfo data={weatherData} />
           <br />
           <h3>Forecast for the week</h3>
-          <WeatherForecast
-            coordinates={weatherData.coordinates}
-            city={weatherData.city}
-          />
+          <div className="forecast mt-1 mb-1">
+            <WeatherForecast
+              coordinates={weatherData.coordinates}
+              city={weatherData.city}
+            />
+          </div>
         </div>
 
-        <footer class="mt-5">
+        <footer class="mt-4">
           <div class="footer-header">
             <div>
               <p>
-                Made by Natasha <br />
-                <a href="/" target="_blank" rel="noreferrer">
-                  open-sourced on github
+                👩🏾‍💻 Coded by Natasha, it is open-sourced on <br />
+                <a
+                  href="https://github.com/Natasha2702/react-final-weather-app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github
                 </a>{" "}
-                and{" "}
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  hosted on Netlify
+                and hosted on{" "}
+                <a
+                  href="https://voluble-salmiakki-673f0c.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Netlify
                 </a>
               </p>
             </div>
