@@ -84,6 +84,5 @@
 .forecast {
   border: 3px solid pink;
   border-radius: 16px;
-  border-style: dotted;
-  background: rgb(213, 245, 213);
+  border-style: solid;
 }
